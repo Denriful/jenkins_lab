@@ -24,7 +24,7 @@
                 image: "{{ image_id }}"
                 imagePullPolicy: IfNotPresent
                 ports:
-                - containerPort: 8180
+                - containerPort: 8080
       validate_certs: no
   - name: Expose app
     k8s:
