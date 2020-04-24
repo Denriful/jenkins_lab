@@ -39,8 +39,7 @@
           namespace: default
         spec:
           selector:
-            matchLabels: 
-              role: app
+            role: app
           ports:
             - protocol: TCP
               port: 80
