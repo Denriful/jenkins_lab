@@ -10,7 +10,7 @@
           name: app
           namespace: default
         spec:
-          replicas: 2
+          replicas: 3
           selector: 
             matchLabels: 
               role: app
@@ -34,9 +34,11 @@
         kind: Service
         metadata:
           name: app
+          namespace: default
         spec:
           selector:
-            role: app
+            matchLabels: 
+              role: app
           ports:
             - protocol: TCP
               port: 80
