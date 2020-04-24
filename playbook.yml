@@ -9,8 +9,10 @@
         metadata:
           name: app
           namespace: default
+          labels:
+            role: app
         spec:
-          replicas: 3
+          replicas: 2
           selector: 
             matchLabels: 
               role: app
