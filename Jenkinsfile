@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       registry = "Denriful/jenkins_lab"
+       registry = "jenkins_lab"
        GOCACHE = "/tmp"
    }
    stages {
